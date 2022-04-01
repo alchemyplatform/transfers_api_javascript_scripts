@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import axios from 'axios';
 
   let data = JSON.stringify({
   "jsonrpc": "2.0",
@@ -6,8 +6,8 @@ import fetch from 'node-fetch';
   "method": "alchemy_getAssetTransfers",
   "params": [
     {
-      "fromBlock": "0x0",
-      "toAddress": "0x5c43B1eD97e52d009611D89b74fA829FE4ac56b1",
+      "fromBlock": "0xA97AB8",
+      "fromAddress": "0x5c43B1eD97e52d009611D89b74fA829FE4ac56b1",
     }
   ]
 });
@@ -22,9 +22,9 @@ import fetch from 'node-fetch';
 
   const apiKey = "demo"
   const baseURL = `https://eth-mainnet.alchemyapi.io/v2/${apiKey}`;
-  const fetchURL = `${baseURL}`;
+  const axiosURL = `${baseURL}`;
 
-  const res = await fetch(axiosURL, requestOptions);
+  const res = await axios(axiosURL, requestOptions);
 
   // Print token name / asset value
   for (const events of res.data.result.transfers) {
