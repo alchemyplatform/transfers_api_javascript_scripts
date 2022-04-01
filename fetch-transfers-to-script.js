@@ -21,8 +21,8 @@ import fetch from 'node-fetch';
   };
 
   const apiKey = "demo"
-  const baseURL = 'https://eth-mainnet.alchemyapi.io/v2/${apiKey}';
-  const fetchURL = ${baseURL};
+  const baseURL = `https://eth-mainnet.alchemyapi.io/v2/${apiKey}`;
+  const fetchURL = `${baseURL};`
 
   fetch(fetchURL, requestOptions)
     .then(response => response.json())
