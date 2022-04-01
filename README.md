@@ -17,19 +17,19 @@ npm install
 3. Use `alchemy-web3` javascript sdk
 
 ```
-node alchemy-web3-script.js
+node alchemy-web3-all-transfers-script.js
 ```
 
 4. Use `fetch` javascript module
 
 ```
-node fetch-script.js
+node fetch-all-transfers-script.js
 ```
 
 5. Use `axios` javascript module
 
 ```
-node axios-script.js
+node axios-all-transfers-script.js
 ```
 
 6. Read docs for more info
