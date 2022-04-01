@@ -1,4 +1,3 @@
-// alchemy-nft-api/alchemy-web3-script.js
 import { createAlchemyWeb3 } from "@alch/alchemy-web3";
 
 // Replace with your Alchemy api key:
