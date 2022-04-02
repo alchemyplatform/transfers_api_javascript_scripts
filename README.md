@@ -1,4 +1,4 @@
-# Alchemy NFT API Javascript Scripts
+# Alchemy Transfers API Javascript Scripts
 
 Clone the repo, install dependencies, and try the API out!
 
