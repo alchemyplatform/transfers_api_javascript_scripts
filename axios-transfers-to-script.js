@@ -6,7 +6,7 @@ import axios from 'axios';
   "method": "alchemy_getAssetTransfers",
   "params": [
     {
-      "fromBlock": "0xA97AB8",
+      "fromBlock": "0x0",
       "toAddress": "0x5c43B1eD97e52d009611D89b74fA829FE4ac56b1",
     }
   ]
@@ -14,10 +14,9 @@ import axios from 'axios';
 
 
   var requestOptions = {
-    method: 'POST',
+    method: 'post',
     headers: { 'Content-Type': 'application/json' },
-    body: data,
-    redirect: 'follow'
+    data: data,
   };
 
   const apiKey = "demo"

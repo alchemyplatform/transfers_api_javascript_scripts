@@ -5,7 +5,7 @@ const apiKey = "demo";
 
 // Initialize an alchemy-web3 instance:
 const web3 = createAlchemyWeb3(
-  https://eth-mainnet.alchemyapi.io/v2/${apiKey},
+  `https://eth-mainnet.alchemyapi.io/v2/${apiKey}`,
 );
 
 const data = await web3.alchemy.getAssetTransfers({

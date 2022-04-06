@@ -14,10 +14,9 @@ import axios from 'axios';
 
 
   var requestOptions = {
-    method: 'POST',
+    method: 'post',
     headers: { 'Content-Type': 'application/json' },
-    body: data,
-    redirect: 'follow'
+    data: data,
   };
 
   const apiKey = "demo"
