@@ -1,12 +1,11 @@
-import { createAlchemyWeb3 } from "@alch/alchemy-web3";
+// Setup: npm install alchemy-sdk
+import { Alchemy, Network } from "alchemy-sdk";
 
-// Replace with your Alchemy api key:
-const apiKey = "demo";
-
-// Initialize an alchemy-web3 instance:
-const web3 = createAlchemyWeb3(
-  `https://eth-mainnet.alchemyapi.io/v2/${apiKey}`,
-);
+const config = {
+  apiKey: "<-- ALCHEMY APP API KEY -->",
+  network: Network.ETH_MAINNET,
+};
+const alchemy = new Alchemy(config);
 
 const res = await web3.alchemy.getAssetTransfers({
   fromBlock: "0xA97AB8",
